@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Color;
 import android.os.Build;
 import android.util.AttributeSet;
+import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 import androidx.annotation.RequiresApi;
 
@@ -32,6 +33,9 @@ public class BubbleRelativeLayout extends RelativeLayout {
 
   private void init(final Context context, final AttributeSet attrs) {
 
+    ViewGroup.LayoutParams params = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
+        ViewGroup.LayoutParams.MATCH_PARENT);
+    setLayoutParams(params);
   }
 
   /**
