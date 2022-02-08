@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+  <declare-styleable name="AutoSizeLinearLayout_Layout" tools:ignore="ResourceName">
+    <attr name="autoSize">
+      <enum name="yes" value="1" />
+      <enum name="no" value="0" />
+    </attr>
+  </declare-styleable>
+
+  <!--自定义圆形进度条-->
+  <declare-styleable name="chatui_RoundProgressBar">
+    <attr name="chatui_fromDegree" format="integer" />
+    <attr name="chatui_isClockwise" format="boolean" />
+    <attr name="chatui_roundColor" format="color" />
+    <attr name="chatui_roundProgressColor" format="color" />
+    <attr name="chatui_roundWidth" format="dimension" />
+    <attr name="chatui_textColor" format="color" />
+    <attr name="chatui_textSize" format="dimension" />
+    <attr name="chatui_max" format="integer" />
+    <attr name="chatui_textIsDisplayable" format="boolean" />
+    <attr name="chatui_style">
+      <enum name="STROKE" value="0" />
+      <enum name="FILL" value="1" />
+    </attr>
+  </declare-styleable>
+
+  <!--自定义扇形遮罩进度条-->
+  <declare-styleable name="chatui_ArcProgressView">
+    <attr name="chatui_circleProgress" format="integer" />
+    <attr name="chatui_startAngle" format="integer" />
+    <attr name="chatui_progressColor" format="color" />
+    <attr name="max" format="integer" />
+  </declare-styleable>
+
+</resources>

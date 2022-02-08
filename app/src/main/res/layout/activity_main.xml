@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:orientation="vertical"
+  tools:context=".MainActivity">
+
+    <Button
+      android:id="@+id/btn"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:text="show popUpWindow" />
+
+    <Button
+      android:id="@+id/btn2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:text="show dialog" />
+
+    <Button
+      android:id="@+id/btn_file_selector"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:text="show file selector" />
+
+
+    <Button
+      android:id="@+id/btn_add_float_view"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:text="show float linearLayout" />
+
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_vertical"
+      android:orientation="horizontal"
+      android:paddingTop="20dp"
+      android:paddingBottom="20dp">
+
+        <FrameLayout
+          android:layout_width="60dp"
+          android:layout_height="60dp"
+          android:layout_marginLeft="20dp">
+            <ImageView
+              android:id="@+id/chatui_account_avatar_iv"
+              android:layout_width="60dp"
+              android:layout_height="60dp"
+              android:contentDescription="TODO"
+              android:src="@drawable/ic_launcher_foreground"/>
+            <com.example.myapplication.CustomView.ArcProgressView
+              android:id="@+id/iv_file_progress"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              app:chatui_progressColor = "@color/ui_40_percent_transparent"
+              app:chatui_startAngle = "-90"/>
+        </FrameLayout>
+
+
+        <com.example.myapplication.CustomView.MarqueeText
+          android:id="@+id/test_name_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="15dp"
+          android:maxLines="1"
+          android:ellipsize="end"
+          android:textColor="@color/black"
+          android:textSize="18dp"
+          tools:text="陈天" />
+
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+        android:clickable="true"
+      android:focusable="true">
+        <LinearLayout
+          android:id="@+id/test_layout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@color/white"
+          android:orientation="horizontal"
+          android:paddingStart="20dp"
+          android:paddingLeft="20dp"
+          android:paddingTop="16dp"
+          android:paddingEnd="20dp"
+          android:paddingRight="20dp"
+          android:paddingBottom="16dp">
+
+            <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="功能介绍"
+              android:textColor="@color/black"
+              android:textSize="15sp" />
+
+            <com.example.myapplication.CustomView.MarqueeText
+              android:id="@+id/test_tv"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="30dp"
+              android:singleLine="true"
+              android:focusableInTouchMode="true"
+              android:focusable="true"
+              android:ellipsize="marquee"
+              android:marqueeRepeatLimit="marquee_forever"
+              android:gravity="left"
+              android:textColor="@color/black"
+              android:textSize="15sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+      android:id="@+id/btn3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="right"
+      android:text="show" />
+
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+        <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+            <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="15dp"
+              android:layout_marginBottom="15dp"
+              android:text="接收人"
+              android:textSize="16sp"
+              android:layout_alignParentLeft="true"
+              android:layout_marginLeft="20dp" />
+            <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="15dp"
+              android:text="高晓松(18146757778)"
+              android:textSize="16sp"
+              android:layout_marginBottom="15dp"
+              android:layout_marginRight="20dp"
+              android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/background">
+
+        </View>
+
+        <ScrollView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+                <TextView
+                  android:id="@+id/scroll_test"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="16sp"
+                  android:layout_marginLeft="20dp"
+                  android:layout_marginRight="20dp"
+                  android:layout_marginTop="16dp">
+                </TextView>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+        <RelativeLayout
+          android:id="@+id/test_rv"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:gravity="center_vertical"
+          android:orientation="vertical"
+          android:layout_marginRight="5dp">
+
+            <ImageView
+              android:id="@+id/test_jiaji"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/test_jiaji"
+              android:layout_alignTop="@+id/tv_jiaji"
+              android:layout_alignBottom="@+id/tv_jiaji"
+              android:layout_marginBottom="15dp"/>
+
+            <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/test_jiaji"
+              android:layout_alignTop="@+id/tv_jiaji"
+              android:layout_alignBottom="@+id/tv_jiaji"
+              android:layout_marginTop="15dp"
+              />
+
+            <TextView
+              android:id="@+id/tv_jiaji"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"
+              android:layout_marginBottom="10dp"
+              android:layout_toRightOf="@+id/test_jiaji"
+              android:textSize="16sp"
+              android:text="hellotesthellotesthellotesthellotesthellotest" />
+
+        </RelativeLayout>
+    </LinearLayout>
+    <CalendarView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+</LinearLayout>

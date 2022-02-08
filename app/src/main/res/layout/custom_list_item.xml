@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/lv_test"
+  android:orientation="horizontal"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+
+    <TextView
+      android:id="@+id/text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/chatmsg_menu_item_selctor"
+      android:paddingRight="12dp"
+      android:paddingLeft="12dp"
+      android:paddingTop="8dp"
+      android:paddingBottom="8dp"
+      android:textColor="#ffffff"
+      android:textSize="12sp"
+      android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

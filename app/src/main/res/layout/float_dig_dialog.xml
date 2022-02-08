@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  <com.example.myapplication.CustomView.GraggableLinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/divide">
+
+    <RelativeLayout
+      android:clickable="true"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/black"
+      android:focusable="false">
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="back"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_alignParentStart="true" />
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="FLoat View"
+        android:textColor="@color/white"
+        android:textSize="24sp"/>
+    </RelativeLayout>
+
+    <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/second_fragment_label" />
+
+    <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/second_fragment_label" />
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="sdadadadadadafgasfgasfasgfasdfgas"
+      android:textSize="50sp"/>
+
+  </com.example.myapplication.CustomView.GraggableLinearLayout>
+</RelativeLayout>

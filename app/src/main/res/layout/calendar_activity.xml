@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+   <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="首次进线时间"
+     android:textColor="@color/black"
+     android:textStyle="bold"
+     android:textSize="16dp"/>
+
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+      android:id="@+id/concact_calender_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+      <EditText
+        android:id="@+id/contact_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="开始日期"
+        android:textSize="14dp"
+        android:layout_marginRight="15dp" />
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="至"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:layout_marginRight="15dp"/>
+      <EditText
+        android:id="@+id/contact_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="结束日期"
+        android:textSize="14dp"/>
+
+    </LinearLayout>
+
+    <CalendarView
+      android:id="@+id/first_calendar"
+      android:layout_below="@+id/concact_calender_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:visibility="gone"/>
+
+  </RelativeLayout>
+
+
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="最后沟通时间"
+    android:textColor="@color/black"
+    android:textStyle="bold"
+    android:textSize="16dp"/>
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+      android:id="@+id/calendar_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+      <EditText
+        android:id="@+id/final_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="开始日期"
+        android:textSize="14dp"
+        android:layout_marginRight="15dp" />
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="至"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:layout_marginRight="15dp"/>
+      <EditText
+        android:id="@+id/final_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="结束日期"
+        android:textSize="14dp"/>
+
+    </LinearLayout>
+
+    <CalendarView
+      android:id="@+id/final_calendar"
+      android:layout_below="@+id/calendar_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:visibility="gone"/>
+  </RelativeLayout>
+
+
+
+</LinearLayout>
